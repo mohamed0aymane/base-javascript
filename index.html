@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Les scripts s'éxecutant de manière séquentielle, le séquencement est le suivant 
+     L15/L16/L17/L20/L28/L37 -->
+    <title>Le langage JavaScript</title>
+
+    <!-- La balise link est utilisé pour les feuilles de style. -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Script de style externe -->
+    <script src="js/arrays.js"></script>
+    <script src="js/basics.js"></script>
+    <script src="js/object.js"></script>
+
+    <!-- Script interne -->
+    <script>
+        /* Une ou plusieurs instructions */
+        afficher('Script interne dans le head');
+    </script>
+</head>
+<!-- onload ==> Contenu concrétisé -->
+<body onload="afficher('onload')">
+    
+    <script>
+        /* Modification avant l'apparition de tous les éléments de la page */
+        afficher('Début du body');
+    </script>
+    
+    <h1>Le langage JavaScript</h1>
+
+    <section class="chapter">
+        <header >Chapitre 1 : Introduction au langage JavaScript</header>
+        <p onclick="exp01()">1.1 Types de base</p>
+        <p onclick="exp02()">1.2 Contexte Global et Objet Global window</p>
+        <p onclick="exp03()">1.3 Types Wrappers</p>
+        <p onclick="exp04()">1.4 Comparaison de variables et valeur falsy/truthy</p>
+        <p onclick="exp05()">1.5 Conversion de types</p>
+        <header >Chapitre 2 : Les tableaux</header>
+        <p onclick="arrays.exp01()">2.1 Création d'un tableau</p>
+        <p onclick="arrays.exp02()">2.2 Le type array</p>
+        <p onclick="arrays.exp03()">2.3 Parcours d'un tableau</p>
+        <p onclick="arrays.exp04()">2.4 Tableau de clé de type String</p>
+        <div class ="example" id="author"></div>
+        <p onclick="arrays.exp05()">2.5 Spread Operator (...) </p> 
+        <p onclick="arrays.exp06()">2.5 Object Destructuring </p> 
+        <header >Chapitre 3 : POO en JavaScript</header>
+        <p onclick="objects.exp01()">3.1 Création d'un objet</p>    
+        <p onclick="objects.exp02()">3.2 Création dynamique de propriétés/méthodes d'un objet</p>        
+        <p onclick="objects.exp03()">3.3 Clé d'un objet</p>        
+        <p onclick="objects.exp04()">3.4 Objets vs Tableaux</p>        
+        <p onclick="objects.exp05()">1.5 Spread Operator et Destructuring</>
+        <p onclick="objects.exp06()">3.6 Prototypage</>
+    </section>
+
+    <span id="01" onclick="afficher('Script Evénementiel')">Script Evénementiel</span>
+
+    <script>
+        /* Modification après l'apparition de tous les éléments de la page */
+        afficher('Fin du body');
+    </script>
+</body>
+</html>

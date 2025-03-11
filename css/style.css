@@ -1,0 +1,62 @@
+.chapter {
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-block: 30px; /*Marge en haut et en bas*/
+    font-family: 'Segoe UI';
+    padding-bottom: 20px;
+}
+
+.chapter > header {
+    font-size: 18px;
+    background-color: beige;
+    font-weight: bold;
+    padding: 5px;
+    box-shadow: 0px 1px 3px lightgray;
+    margin-bottom: 20px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.chapter > p {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+    color: blue;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.chapter > p:hover {
+    background-color: beige;
+    font-weight: bold;
+}
+
+/*************************************************************************************************/
+.example {
+    border: 1px dashed red;
+    margin-block: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.data-table {
+    box-shadow: 2px 2px 5px gray;
+    width: 90%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:'Segoe UI';
+}
+
+.data-table th {
+    background-color: beige;
+}
+
+.data-table td {
+    padding: 5px;
+    border-top: 1px solid gainsboro;
+}
+
