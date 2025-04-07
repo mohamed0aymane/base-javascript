@@ -1,0 +1,32 @@
+.authors-list{
+    /*SPA single page application*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Segoe UI';
+}
+.authors-list > div {
+    width: 300px;
+    box-shadow: 2px 2px 5px gray;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+
+}
+.authors-list > div img {
+    width: 100%;
+   
+}
+.authors-list > div > div{
+    background-color: beige;
+}
+.authors-list > div > div:nth-child(2) >span:nth-child(1){
+    font-weight: bold;
+}
+.authors-list > div > div:nth-child(2) >span:nth-child(2){
+    color: blue;
+}
+.authors-list > div > div:nth-child(3) >span:nth-child(2){
+    color: maroon;
+    font-weight: bold;
+}
